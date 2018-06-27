@@ -43,9 +43,9 @@ class ContactAppTestAppium(unittest.TestCase):
 
         #Home Module
         self.driver.find_element_by_id("com.android.packageinstaller:id/permission_allow_button").click()
-        leftmenu = self.driver.find_element_by_id("com.clearfly.groupfone:id/home_profile_pic").click()
-        self.assertTrue(leftmenu.is_displayed())
-        leftmenu.click()
+        grouptile = self.driver.find_element_by_id("com.clearfly.groupfone:id/cellView")
+        self.assertTrue(grouptile.is_displayed())
+        grouptile.click()
 
 
 
